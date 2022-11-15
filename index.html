@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="education-bar.css">
+    <link rel="stylesheet" href="main-header.css">
+    <link rel="stylesheet" href="requests.css">
+    <link rel="stylesheet" href="connections.css">
+    <link rel="stylesheet" href="view-more.css">
+</head>
+<body>
+
+    <!-- main -->
+    <div class="flex-container">
+
+        <!--profile heading-->
+        <div class="profile-heading">
+            <div class="searchh">
+                <h1>Profile</h1>
+                <h3>Home</h3>
+                <h3>Profile</h3>
+                <h3>Find Connectons</h3>
+            </div>
+            <div>
+                <button class="btn">Sign Out</button>
+            </div>
+        </div>
+            <div class="splitpage">
+                
+                <div class="page-split1">
+                
+                        <!-- user info card -->
+                        <div class="user-card">
+                            <div class="card-header">
+                                <img src="profile pics/jane-m.jpg" alt="Jane" class="avatar-m">
+                            </div>
+                            <div class="card-body">
+                                <h1 class="userName">Jane Doe</h1>
+                                <h3>
+                                    <img src="icons/map-marker.png" alt="pin" class="icon-s"> 
+                                    Seattle
+                                </h3>
+                                <p>Developer | Engineer | Problem Solver<br>
+                                    Master of shadows and the Internet!</p>
+                                    <p>
+                                        <a href="#" class="edit-profile-btn" onclick="changeName(this)">
+                                            <img src="icons/gear.png" alt="gear" class="icon-s"> 
+                                            edit profile
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                            <!--education bar-->
+                            <div class="education-bar">
+                                <h3 class="education-header">Education</h2>
+                                <div class="educationInfo">
+                                    <h2>Coding Dojo - Full Stack Bootcamp</h2>
+                                    <h2 class="dates">Dec 2019 - Mar 2020</h2>
+                                    <h2>Triple black belt in Python, MERN, and C#...</h2>
+                                </div>
+                                    
+                            </div>
+                </div>      
+                <div class="page-split2">      
+                    <div class="requests">
+                        <div class="requests-header">
+                            <h2><span class="requestAmount">2</span> Connection Requests</h2>
+                        </div>
+                        <div class="connectionRequests">
+                                <h3 class="requestProfile"><img class="requestImg" src="profile pics/todd-s.jpg" height="40px" alt="Todd E">Todd E</h3>
+                            <div>
+                                <img onclick="accept(this)" src="icons/accept-circle.png" alt="Accept" class="accept" height="40px">
+                                <img onclick="ignore(this)" src="icons/close-circle.png" alt="Close" class="close" height="40px">
+                            </div>
+                        </div>
+                        <div class="connectionRequests">
+                            <div class="requestProfile">
+                                <img class="requestImg" src="profile pics/phil-s.jpg" height="40px" alt="Phil K">
+                                <h3>Phil K</h3>
+                            </div>
+                            <div>
+                                <img onclick="accept(this)"src="icons/accept-circle.png" alt="Accept" class="accept" height="40px">
+                                <img onclick="ignore(this)" src="icons/close-circle.png" alt="Close" class="close" height="40px">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="connections">
+                        <div class="connections-header">
+                            <h2><span id="connections">500</span> Your Connections</h2>
+                        </div>
+                        <div class="connectionsProfile">
+                            <div class="connectionsInfo">
+                                <img class="connectionsImg" src="profile pics/adrien-s.jpg" height="40px" alt="Adrien D">
+                                <h3>Adrien D</h3>
+                            </div>
+                            <div>
+                                <img src="icons/accept-circle.png" alt="Accept" class="accept" height="40px">
+                                <img src="icons/close-circle.png" alt="Close" class="close" height="40px">
+                            </div>
+                        </div>
+                        <div class="connectionsProfile">
+                            <div class="connectionsInfo">
+                                <img class="connectionsImg" src="profile pics/anne-s.jpg" height="40px" alt="Anne J">
+                                <h3>Anne J</h3>
+                            </div>
+                            <div>
+                                <img src="icons/accept-circle.png" alt="Accept" class="accept" height="40px">
+                                <img src="icons/close-circle.png" alt="Close" class="close" height="40px">
+                            </div>
+                        </div>
+                        <div class="connectionsProfile">
+                            <div class="connectionsInfo">
+                                <img class="connectionsImg" src="profile pics/alayne-s.jpg" height="40px" alt="Alayne T">
+                                <h3>Alayne T</h3>
+                            </div>
+                            <div>
+                                <img src="icons/accept-circle.png" alt="Accept" class="accept" height="40px">
+                                <img src="icons/close-circle.png" alt="Close" class="close" height="40px">
+                            </div>
+                        </div>
+                        <div class="connectionsProfile">
+                            <div class="connectionsInfo">
+                                <img class="connectionsImg" src="profile pics/arry-s.jpg" height="40px" alt="Arry Y">
+                                <h3>Arry Y</h3>
+                            </div>
+                            <div>
+                                <img src="icons/accept-circle.png" alt="Accept" class="accept" height="40px">
+                                <img src="icons/close-circle.png" alt="Close" class="close" height="40px">
+                            </div>
+                        </div>
+                        <div class="view-more">
+                            <a href="#">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+    </div>
+    <script src="script.js"></script> 
+    </body>
+    </html>

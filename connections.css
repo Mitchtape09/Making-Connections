@@ -1,0 +1,40 @@
+.connections {
+    background-color:  #fff;
+    border: 2px solid grey;
+    width: 400px;
+    color: white;
+    margin: 20px;
+}
+.connections-header span {
+    background-color: gray;
+    border-radius: 50%;
+    padding: 10px;
+
+} 
+.connections-header {
+    padding: 20px;
+    height: 35px;
+    background-color: rgb(15, 14, 14);
+    font-size: 16px;
+}
+.connectionsProfile {
+    color: black;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.connectionsInfo {
+    display: flex;
+    align-items: center;
+}
+.connectionsImg {
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 10px;
+}
+h3 {
+    margin: 10px;
+}
